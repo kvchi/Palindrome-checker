@@ -1,0 +1,104 @@
+/* ===== Palindrome Checker — Glass Card Theme ===== */
+
+/* 1. Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* 2. Design tokens */
+:root {
+  --clr-bg: #eef2f7;              
+  --clr-card: rgba(255, 255, 255, 0.8);
+  --clr-card-border: rgba(255, 255, 255, 0.35);
+  --clr-accent: #8e44ad;          
+  --clr-success: #27ae60;         
+  --clr-fail: #e74c3c;            
+  --radius: 1rem;
+  --space: 1rem;
+  --font-main: 'Poppins', sans-serif;
+}
+
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--clr-bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space);
+}
+
+
+.card {
+  background: var(--clr-card);
+  border: 1px solid var(--clr-card-border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+
+h2 {
+  margin: 0 0 1.2rem;
+  font-weight: 600;
+  color: var(--clr-accent);
+}
+
+
+.form {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+button {
+  background: var(--clr-accent);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+button:hover { background: #6d3185; }
+
+
+#result {
+  min-height: 1.5rem;  
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.result--true  { color: var(--clr-success); }
+.result--false { color: var(--clr-fail); }
+
+
+@media (max-width: 480px) {
+  .form { flex-direction: column; }
+  button { width: 100%; }
+}

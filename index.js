@@ -1,19 +1,20 @@
  
  const input = document.getElementById("input");
- const button = document.getElementById("myBtn")
+ const button = document.getElementById("myBtn");
+ const result = document.getElementById("result");
+
+     function isPalindrome(word) {
+ word = word.toLowerCase();
+  return word === [...word].reverse().join("");
+}
 
  button.addEventListener("click", () => {
-        const word = input.value
-        function isPalindrome(word) {
- word = word.toLowerCase();
-  let revStr = word.split("").reverse().join("");
-  if( word !== revStr) {
-      alert(`the word, ${word} is not a palindrome`)
-  } else {
-    alert(`the word, ${word} is a palindrome`)
-  }
-}
-isPalindrome(word)
+        const word = input.value.trim();
+        if (!word) return;
+        
+    
+  const ok = isPalindrome(word);
+  result.textContent = ok? `"${word}" is a palindrome` : `"${word}" is not a palindrome`
  })
  
  
