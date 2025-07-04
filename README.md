@@ -13,7 +13,7 @@ What it does:
 - Practicing modular, readable JavaScript functions
 
 🖼 Screenshot attached  
-🌐 Live project:  
+🌐 Live project: https://kvchi.github.io/Palindrome-checker/
 📦 GitHub repo: https://github.com/kvchi/palindrome-checker
 
 Every day, one small app — consistency over complexity.
