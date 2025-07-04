@@ -1,22 +1,38 @@
-✅ Project #2 – Palindrome Checker 🚀
+# 🔁 Palindrome Checker
 
-Continuing my journey as a Front-End Developer, I built a simple but functional **Palindrome Checker** using HTML, CSS, and JavaScript.
+A simple web app that checks if a given word or phrase is a palindrome — built using **HTML**, **CSS**, and **JavaScript**.
 
-What it does:
-💬 Type a word → it checks if it’s a palindrome (reads the same backward and forward)
-🧠 Includes logic to ignore case and spacing
-🎨 Styled with a clean glassmorphism design
+## 🚀 Live Demo
 
-🧪 What I learned:
-- How to use DOM manipulation effectively
-- Writing cleaner conditionals with the ternary operator
-- Practicing modular, readable JavaScript functions
+👉 [View the Live App](https://kvchi.github.io/palindrome-checker/)
 
-🖼 Screenshot attached  
-🌐 Live project: https://kvchi.github.io/Palindrome-checker/
-📦 GitHub repo: https://github.com/kvchi/palindrome-checker
+## ✨ Features
 
-Every day, one small app — consistency over complexity.
+- Check if a word or sentence is a palindrome
+- Ignores casing, spaces, and punctuation
+- Clean glassmorphism UI
+- Responsive and mobile-friendly
+
+## 🧠 What I Learned
+
+- DOM manipulation with JavaScript
+- Using functions and ternary operators
+- Custom CSS variables and styling
+- Improving input handling and UX
+
+
+## 🛠 Tech Stack
+
+- HTML
+- CSS (custom styled)
+- JavaScript (Vanilla)
+
+## 📁 How to Use
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/kvchi/palindrome-checker.git
+
 
 
 
